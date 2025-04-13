@@ -1,7 +1,6 @@
 Real-Time End To End DevOps CI/CD Project :-
 --------------------------------------------
 
-https://github.com/jaiswaladi246/SpringBoot-WebApplication
 
 
 first of all developer commit the code to git hub through webhook Jenkins pipeline get trigered 
@@ -79,7 +78,7 @@ pipeline {
     stages {
         stage('git checkout') {
             steps {
-                git branch: 'main', changelog: false, poll: false, url: 'https://github.com/jaiswaladi246/SpringBoot-WebApplication.git'
+                git branch: 'main', changelog: false, poll: false, url: '<github-link>'
             }
         }
          stage('code compile') {
